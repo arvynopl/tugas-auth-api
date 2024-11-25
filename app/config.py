@@ -1,5 +1,13 @@
 # File app/config.py
 
+from app.config import settings
+
+secret_key = settings.SECRET_KEY
+jwt_secret_key = settings.JWT_SECRET_KEY
+access_token_expire_minutes = settings.ACCESS_TOKEN_EXPIRE_MINUTES
+api_key = settings.API_KEY
+database_url = settings.DATABASE_URL
+
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 
